@@ -23,6 +23,7 @@ img[src="images/logo.png"] {
 /* Style the links inside the navigation bar */
 .menu a {
   float: left;
+  background-color: #cdcdcd;
   display: block;
   color: black;
   text-align: center;

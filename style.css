@@ -24,11 +24,17 @@ html,body {
 /* HEADER */
 
 img[src="images/logo.png"] {
-	height: 100%;
-	padding-left: 10%;
-	position: relative;
+	width: 100%;
+	height:100%;
 }
 
+.logo {
+	position: static;
+	width: 250px;
+    height: auto;
+    display: inline-block;
+    padding-left: 10%;
+}
 .header {
 	background-color: #089c9c;
 	margin-top: 0px;
@@ -116,19 +122,30 @@ img[src="images/logo.png"] {
   .menu li a {
     display: none;
   }
+
+  .logo {
+  	padding-left:20px;
+  }
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 1200px) {
 
 	.menu.responsive {
+		height: 400%;
 		position: relative;
 	}
 
+	.menu.responsive li {
+		position: relative;
+		top: 40;
+	}
+
 	.menu.responsive a.icon {
-  	position: absolute;
-  	top: -5.7;
-  	right: 0;
+  		position: absolute;
+  		top: -5.7;
+  		right: 0;
   }
 
   .menu.responsive li a {
@@ -142,7 +159,6 @@ img[src="images/logo.png"] {
     text-transform: none;
     border-bottom: 3px solid transparent;
     padding: 10px 10px;
-    top: 50;
   }
 
   .menu.responsive li a:hover {
@@ -152,5 +168,5 @@ img[src="images/logo.png"] {
   .menu.responsive a.active {
     border-bottom: 3px solid #089c9c;
   }
-
 }
+

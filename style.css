@@ -6,7 +6,9 @@ body {
   width: device-width;
   zoom: 1.0;
 }
-
+.menuM {
+background-color:red;
+}
 html,body {
     width: 100%;
     height: 100%;
@@ -58,11 +60,10 @@ img[src="images/logo.png"] {
 	float: right;
   	background-color: transparent;
   	overflow: hidden;
-  	padding-left: 15%;
+  	padding-right: 25%;
   	margin-top: 17px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	display: inline;
-	position: absolute;
 }
 
 .menu li {
@@ -107,7 +108,10 @@ img[src="images/logo.png"] {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1270px) {
+	.menu {
+		padding-right: 0;
+	}
  .menu a.icon {
     display: block;
     margin-right: 20px;
@@ -130,7 +134,7 @@ img[src="images/logo.png"] {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1270px) {
 
 	.menu.responsive {
 		height: 400%;
@@ -170,3 +174,21 @@ img[src="images/logo.png"] {
   }
 }
 
+/*Content*/
+.content {
+	color: white;
+	padding: 35px 10%;
+}
+
+/* Footer */
+.footer {
+	background-color: white;
+	width: 100%;
+	height:200px;
+	display: inline-block;
+}
+
+.cont {
+font-size: 100%;
+padding-left: 10%;
+}

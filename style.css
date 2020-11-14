@@ -186,9 +186,36 @@ img[src="images/logo.png"] {
 	width: 100%;
 	height:200px;
 	display: inline-block;
+	padding-left: 20%;
+	overflow: hidden;
 }
 
 .cont {
+display: block;
 font-size: 100%;
-padding-left: 10%;
+float: left;
+}
+
+.wpptlogo {
+	display: block;
+	padding-left: 6%;
+	padding-top: 1.5%;
+	float: left;
+}
+
+.wpptlogo img {
+	height: 75%;
+}
+
+.socials {
+	display: block;
+	float: left;
+	padding-left: 6%;
+}
+
+/* footer #2 */
+.lfooter {
+	background-color: #089c9c;
+	width: 100%;
+	height: 40px;
 }

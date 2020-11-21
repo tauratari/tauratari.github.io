@@ -1,221 +1,148 @@
-body {
-  background-color: white;
-}
-
-@viewport {
-  width: device-width;
-  zoom: 1.0;
-}
-.menuM {
-background-color:red;
-}
 html,body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Aleo', serif;
+    font-family: 'Candara';
     background-color: black;
 }
-
-.container {
-	margin: auto;
-}
-
 /* HEADER */
-
-img[src="images/logo.png"] {
-	width: 100%;
-	height:100%;
-}
-
-.logo {
-	position: static;
-	width: 250px;
-    height: auto;
-    display: inline-block;
-    padding-left: 10%;
-}
 .header {
-	background-color: #089c9c;
-	margin-top: 0px;
-	height: 105px;
+	background-image: url("images/stars.png");
+	width: 100%;
+	height: 150px;
+
 }
 
+header img {
+	height: 100%;
+	width: 100%;
+}
+
+/* MENU */
+
+.menu {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-right: 60px;
+  font-size: 180%;
+  text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: transparent;
+  color: #089c9c;
+  transition: 0.8s;
+}
+
+/* Add an active class to highlight the current page */
+.menu a.active {
+  background-color: transparent;
+  color: #089c9c;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
 .icon {
-	display: none;
+  display: none;
+}
+
+@media screen and (max-width: 1370px) {
+  .menu a {
+  	display: none;
+  }
+
+  .icon {
+  	position: absolute;
+    float: right;
+    display: block;
+    right: 5%;
+    top: 55px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1370px) {
+  .menu.responsive {
+  	position: absolute;
+  	background-color: white;
+  	top: 100px;
+  	right: 30px;
+  }
+
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: middle;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .menu.responsive a:hover {
+  color: #089c9c;
+  transition: 0.8s;
+  }
+   .menu.responsive a.active {
+  color: #089c9c;
+  transition: 0.8s;
+  }
 }
 
 .bar {
 	width: 35px;
   	height: 5px;
-  	background-color: black;
+  	background-color: white;
   	margin: 6px 0;
   	transition: 0.4s;
 }
 
-/* Add background color to the top navigation */
-.menu {
-	float: right;
-  	background-color: transparent;
-  	overflow: hidden;
-  	padding-right: 25%;
-  	margin-top: 17px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	display: inline;
-}
-
-.menu li {
-    display: inline;
-    list-style: none;
-}
-
-/* Style the links inside the navigation bar */
-.menu li a {
-	text-transform: uppercase;
-	float: left;
-	padding-right: 2px;
-	padding-left: 2px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	margin-right: 25px;
-  	display: block;
-  	color: black;
-  	text-align: center;
-  	text-decoration: none;
-  	font-size: 125%;
-  	border-top: 3px solid transparent;
-  	border-bottom: 3px solid transparent;
-  	transition-duration: 0.8s;
-}
-
-/* Change the color of links on hover */
-.menu a:hover {
-	color: white;
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
-}
-
-.menu a.icon {
-	display: none;
-}
-/* Add an active class to highlight the current page */
-.menu a.active {
-	color: white;
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1270px) {
-	.menu {
-		padding-right: 0;
-	}
- .menu a.icon {
-    display: block;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-
-  .menu {position: relative;}
-  .menu a:hover {
-  	border-top: none;
-  	border-bottom: none;
-  }
-  .menu li a {
-    display: none;
-  }
-
-  .logo {
-  	padding-left:20px;
-  }
-
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1270px) {
-
-	.menu.responsive {
-		height: 400%;
-		position: relative;
-	}
-
-	.menu.responsive li {
-		position: relative;
-		top: 40;
-	}
-
-	.menu.responsive a.icon {
-  		position: absolute;
-  		top: -5.7;
-  		right: 0;
-  }
-
-  .menu.responsive li a {
-    float: none;
-    display: block;
-    text-align: left;
-    background-color: black;
-    color: white;
-    border-top: none;
-    border-bottom: none;
-    text-transform: none;
-    border-bottom: 3px solid transparent;
-    padding: 10px 10px;
-  }
-
-  .menu.responsive li a:hover {
-    border-bottom: 3px solid #089c9c;
-  }
-
-  .menu.responsive a.active {
-    border-bottom: 3px solid #089c9c;
-  }
-}
-
-/*Content*/
-.content {
-	color: white;
-	padding: 35px 10%;
-}
-
-/* Footer */
-.footer {
-	background-color: white;
-	width: 100%;
-	height:200px;
-	display: inline-block;
-	padding-left: 20%;
-	overflow: hidden;
-}
-
-.cont {
-display: block;
-font-size: 100%;
-float: left;
-}
-
-.wpptlogo {
-	display: block;
-	padding-left: 6%;
-	padding-top: 1.5%;
-	float: left;
-}
-
-.wpptlogo img {
-	height: 75%;
-}
-
-.socials {
-	display: block;
-	float: left;
-	padding-left: 6%;
-}
-
-/* footer #2 */
-.lfooter {
+.line {
 	background-color: #089c9c;
 	width: 100%;
-	height: 40px;
+	height: 2px;
+	overflow: hidden;
+    white-space: nowrap;
+}
+/* MAIN BODY */
+.mainBody {
+	color: white;
+	padding-top:50px;
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: justify;
+}
+
+.fractal img {
+	height: 100%;
+	width: 100%;
+	align: right;
+}
+
+.fractal {
+	width: 500px;
+	float: right;
+	display: inline-block;
+}
+
+.text {
+	display: inline-block;
+}
+
+
+.text img {
+	display: inline-block;
+	align: right;
 }

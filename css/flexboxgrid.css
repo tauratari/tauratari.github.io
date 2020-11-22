@@ -374,6 +374,7 @@
 
   .col-sm-offset-5 {
     margin-left: 41.667%;
+    border: solid red;
   }
 
   .col-sm-offset-6 {

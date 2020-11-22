@@ -11,13 +11,18 @@ html,body {
 .header {
 	background-image: url("images/stars.png");
 	width: 100%;
-	height: 150px;
+	height: 120px;
 
 }
 
 header img {
 	height: 100%;
 	width: 100%;
+}
+
+.nabla-logo {
+    margin-top: -4px;
+    margin-left: 13%;
 }
 
 /* MENU */
@@ -34,9 +39,9 @@ header img {
   color: white;
   text-align: center;
   text-decoration: none;
-  margin-top: 60px;
+  margin-top: 45px;
   margin-right: 60px;
-  font-size: 180%;
+  font-size: 150%;
   text-transform: uppercase;
 }
 
@@ -58,22 +63,28 @@ header img {
   display: none;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1250px) {
   .menu a {
   	display: none;
   }
 
   .icon {
-  	position: absolute;
-    float: right;
-    display: block;
-    right: 5%;
-    top: 55px;
+  	 position: absolute;
+  	 display: block;
   }
 }
 
+.iconcont {
+	position: relative;
+	margin-top: 0px;
+	margin-left: 87%;
+	bottom: 90px;
+}
+
+
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1250px) {
   .menu.responsive {
   	position: absolute;
   	background-color: white;
@@ -99,6 +110,7 @@ header img {
   color: #089c9c;
   transition: 0.8s;
   }
+
 }
 
 .bar {
@@ -116,18 +128,21 @@ header img {
 	overflow: hidden;
     white-space: nowrap;
 }
+
 /* MAIN BODY */
 .mainBody {
 	color: white;
-	padding-top:50px;
-	padding-right: 10%;
-	padding-left: 10%;
+	padding-top:100px;
+	padding-right: 15%;
+	padding-left: 15%;
 	text-align: justify;
+	padding-bottom: 100px;
 }
 
 .fractal img {
-	height: 100%;
-	width: 100%;
+	height: 50%;
+	width: 70%;
+	margin-left: 100px;
 	align: right;
 }
 
@@ -141,8 +156,175 @@ header img {
 	display: inline-block;
 }
 
-
 .text img {
 	display: inline-block;
 	align: right;
+}
+/* MEMBERS */
+.members img {
+    align: right;
+    height: 100%;
+    width: 120%;
+}
+
+.members {
+    margin-right: -260%;
+    float: right;
+}
+
+.list {
+    padding-left: 5em;
+}
+
+.title {
+    color: #089c9c;
+}
+
+.foka img {
+    width: 25%;
+    align: center;
+}
+
+/* PROJECTS */
+.foka {
+    align: center;
+    margin-top: 30px;
+}
+/* NEWS*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 49%;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.column img {
+    width: 80%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #089c9c;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.column:hover .overlay {
+    width: 80%;
+}
+
+.text-event {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    /*-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    white-space: wrap;
+    text-align: left;
+    align: left;
+}
+
+.mainBodyNEWS {
+    color: white;
+    padding-top:100px;
+    padding-right: 15%;
+    padding-left: 20%;
+    text-align: justify;
+}
+
+/* FOOTER */
+.footer {
+	background-image: url("images/stars.png");
+	width: 100%;
+	height: 150px;
+	color: white;
+}
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+#CONTACT {
+	margin-top: 7px;
+}
+
+.col-cust1 {
+	margin: auto;
+}
+
+.col-cust2 {
+margin:auto;
+}
+
+.cont {
+	padding-right:20%;
+	padding-left: 17%;
+	margin:auto;
+}
+
+.tx {
+	font-size: 150%;
+	padding-top:0px;
+}
+
+.rowsoc {
+	display: inline-block;
+	width: auto;
+	margin-left:10PX;
+}
+.rowsoc img {
+	height: 40px;
+	padding-top: 0px;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.rowsoc img:hover {
+	transform: scale(1.2);
+	transition: .5s ease;
+}
+
+.final {
+	background-color:  #089c9c;
+	width: 100%;
+	height: 30px;
+	margin-top: 15px;
+	color: white;
+}
+
+.copyr {
+	margin:auto;
+	margin-top: 3px;
+}
+
+.copyr a {
+	color:white;
+  text-decoration: none;
+}
+
+.copyr a:hover {
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 690px) {
+
+.final {
+	height: 45px;
+}
 }

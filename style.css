@@ -146,14 +146,14 @@ header img {
 	height: 50%;
 	width: 70%;
 	margin:auto;
-	align: right;
 }
 
 .fractal {
 	width: 500px;
 	float: right;
 	display: inline-block;
-    padding-left: 150px;
+	margin: auto;
+   padding-left: 10%;
     margin-right: -8%;
 }
 
@@ -256,6 +256,31 @@ header img {
     position: relative;
 }
 
+/* unvisited link */
+.text-event a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* visited link */
+.text-event a:visited {
+    color: lightgrey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.text-event a:hover {
+    text-decoration: underline;
+}
+
+/* selected link */
+.text-event a:active {
+    color: white;
+    text-decoration: none;
+}
+
 /* FOOTER */
 .footer {
 	background-image: url("images/stars.png");
@@ -317,6 +342,11 @@ margin:auto;
 	color: white;
 }
 
+.containerfinal {
+	padding-right: 10%;
+	padding-left:10%;
+}
+
 .copyr {
 	margin:auto;
 	margin-top: 3px;
@@ -332,13 +362,25 @@ margin:auto;
 }
 
 
-@media screen and (max-width: 690px) {
-
-.final {
-	height: 45px;
-}
+@media screen and (max-width: 500px) {
 
 .footer {
 height: 220px;
 }
+
+}
+
+@media screen and (max-width: 850px) {
+
+.final {
+	height: 45px;
+}
+.fractal {
+	float: none;
+}
+
+.constr img {
+	float: none;
+}
+
 }

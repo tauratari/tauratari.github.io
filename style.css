@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body {
+  background-image: url('images/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#topNav {
+	padding: 1em;
+	margin-top: 5px;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFF;
+}
+
+#topNav ul {
+	display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+#topNav ul li a {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+#topNav ul li a:hover {
+	background: rgba(0, 0, 0, .55);
+}
+
+#topNav input.trigger {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#topNav input.trigger:checked ~ ul { /* show hidden content - ul */
+	display: block!important; /* under no circumstances display it differently */
+}
+
+#topNav label {
+	position: relative;
+	display: block;
+	padding: .5em;
+	background: rgba(0, 0, 0, .4);
+	font-size: 1.2em;
+	line-height: 2em;
+	color: #FFF;
+}
+#topNav label:after { /* display after label - icon for responsive menu */
+	position: absolute;
+	right: .3em;
+	top: .15em;
+	content: "\2261"; /* congruence symbol */
+	font-size: 2.5em;
+}
+
+.intro {
+	width: 100%;
+}
+
+.intro img {
+	display: block;
+	width: 20em;
+	margin: auto;
+}
